@@ -1,0 +1,19 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Import aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
+
+# Add bin dir to PATH
+export PATH="$HOME/.local/bin:$HOME/.zvm/bin:$PATH"
+# Add SSH agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+# Old (default) prompt text
+#PS1='[\u@\h \W]\$ '
+# New (custom) prompt text
+PS1='[\w] \[\e[38;5;77m\]󰌪\[\e[0m\]  '
