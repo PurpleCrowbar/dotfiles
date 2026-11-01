@@ -2,4 +2,4 @@
 	email = 26198472+PurpleCrowbar@users.noreply.github.com
 	name = PurpleCrowbar
 [core]
-	editor = nano
+	editor = nvim
