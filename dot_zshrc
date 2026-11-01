@@ -1,0 +1,19 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt hist_ignore_dups
+setopt inc_append_history
+
+unsetopt beep
+bindkey -e
+
+autoload -Uz compinit
+compinit
+
+[[ -f ~/.aliases ]] && source ~/.aliases
+
+eval "$(starship init zsh)"
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
