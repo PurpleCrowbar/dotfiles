@@ -3,5 +3,7 @@
 	name = PurpleCrowbar
 [core]
 	editor = nvim
+[fetch]
+	prune = true
 [init]
 	defaultBranch = main
