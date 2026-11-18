@@ -15,3 +15,15 @@ end
 for _, key in ipairs({ "k", "<Up>" }) do
     vim.keymap.set({ "n", "x" }, key, "gk")
 end
+
+vim.pack.add({
+    "https://github.com/nvim-lualine/lualine.nvim",
+})
+
+require("lualine").setup({
+    options = {
+        theme = "ayu_mirage",
+        section_separators = "",
+        component_separators = "",
+    },
+})
