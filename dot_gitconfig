@@ -2,6 +2,7 @@
 	email = 26198472+PurpleCrowbar@users.noreply.github.com
 	name = PurpleCrowbar
 [core]
+	autocrlf = input
 	editor = nvim
 [fetch]
 	prune = true
