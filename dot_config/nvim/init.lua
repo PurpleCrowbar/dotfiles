@@ -8,6 +8,7 @@ o.expandtab, o.shiftwidth, tabstop = true, 4, 4
 o.list = true
 o.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 o.confirm = true
+o.keymodel = "startsel,stopsel"
 
 for _, key in ipairs({ "j", "<Down>" }) do
     vim.keymap.set({ "n", "x" }, key, "gj")
