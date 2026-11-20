@@ -17,6 +17,7 @@ eval "$(starship init zsh)"
 # env variables
 export EDITOR=nvim
 export VISUAL=nvim
+export LESS='-FRX'
 [[ -n "$XDG_RUNTIME_DIR" ]] && export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
